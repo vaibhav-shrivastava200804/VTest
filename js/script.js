@@ -5,7 +5,7 @@ let Submit=document.querySelector("#Submit");
 let ham=document.querySelector("#ham");
 let details=document.querySelector(".details");
 let question=document.querySelector(".question");
-
+let leaveCount=0;
 
 console.log(QuesNo);
 let i=0;
