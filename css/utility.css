@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+
+.bred{
+    border: 2px solid red;
+}
+
+.bblack{
+    border: 2px solid black;
+}
+
+.bblue{
+    border: 2px solid blue;
+}
+
+.bgreen{
+    border: 2px solid green;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 0;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow ;
+}
