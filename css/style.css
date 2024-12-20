@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #022B3A;
+}
+
+body{
+    background-color: #a0dae5;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+button{
+    background-color: #BFDBF7;
+    cursor: pointer;
+}
+
+.container{
+    padding: 0;
+    width: 100vw;
+    height: 93vh;
+    justify-content: space-between;
+}
+
+/*Question*/
+
+.question{
+    background-color: #E1E5F2;
+    width: 79%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question .Ques{
+    height: 90%;
+    padding:5px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.question .Ques :first-child{
+    overflow: auto;
+}
+
+.question .quesChange{
+    width: 100%;
+    height: 10%;
+    border-radius:5px;
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+.question .quesChange img{
+    width: 1.5rem;
+    height: 20px;
+    display: none;
+}
+
+.question .quesChange .buttons{
+    display: flex;
+    gap: 5px;
+}
+.question .quesChange .buttons button{
+    width: 4rem;
+    height: 2.5rem;
+    border: 1.5px solid black;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/*Details*/
+
+.details{
+    background-color: #E1E5F2;
+    border-radius: 5px;
+    width: 20%;
+    padding: 5px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details .quesNo{
+    height: 75%;
+    width: 100%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto  ;
+}
+
+.details .quesInfo{
+    height: 25%;
+    padding: 5px;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content:space-around;
+    gap: 5px;
+    overflow: auto;
+}
+
+.details .quesNo button{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1.1rem;
+}
+
+.details .quesInfo .quesAtt{
+    align-items: center;
+    gap: 10px;
+}
+
+.details .quesInfo .quesAtt .circle{
+    height: 2rem;
+    width: 2rem;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.details .quesInfo .quesAtt span{
+    font-size: 1.5rem;
+    overflow-x: hidden;
+}
+
+/*warning box*/
+
+.warningContainer {
+    position: fixed;
+    height: 30%;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #022B3A;
+    color: #a0dae5;
+    border: 2px solid #ff9900; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2rem;
+    display: none;
+    overflow: scroll;
+}
+
+.warningContainer p{
+    color: #a0dae5;
+    width: 100%;
+    height: 90%;
+}
+
+.closeBtn{
+    width: 30%;
+    height: 40%;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background-color: #cc7a00;
+}
+
+/*Responsiveness*/
+
+@media screen and (max-width: 620px){
+    .question .Ques{
+        overflow: scroll;
+    }
+    
+    .details .quesNo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: scroll;
+    }   
+}
+
+@media screen and (max-width: 480px){
+    .container .details{
+        display:none;
+        width: 40%;
+    }
+
+    .container .question{
+        width: 100%;
+        display: block;
+    }
+
+    .question .Ques :first-child{
+        overflow: auto;
+        font-size: 1rem;
+    }
+
+    .container .Ques .quesChange img{
+        display: block;
+    }
+
+    .details .quesNo button{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 5px;
+        border: 2px solid black;
+        font-size: 0.8rem;
+    }
+
+    .details .quesInfo .quesAtt span{
+        font-size: 1rem;
+        overflow-x: hidden;
+    }    
+
+    /*.details .quesInfo .quesAtt span{
+        font-size: 1rem;
+        overflow-x: hidden;
+    }*/
+
+    .warningContainer{
+        font-size: 1rem;
+    }
+    
+    .warningContainer .closeBtn{
+        height: 30%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px){
+}
