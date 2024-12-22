@@ -233,7 +233,8 @@ button{
     .warningContainer{
         font-size: 1rem;
         overflow: scroll;
-        height: 30%;
+        height: 15%;
+        width: 80%;
     }
     
     .warningContainer .closeBtn{
@@ -242,5 +243,4 @@ button{
     }
 }
 
-@media screen and (max-width: 320px){
-}
+
