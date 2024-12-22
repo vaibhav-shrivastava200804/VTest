@@ -159,7 +159,6 @@ button{
     text-align: center;
     font-size: 1.2rem;
     display: none;
-    overflow: scroll;
 }
 
 .warningContainer p{
@@ -230,13 +229,11 @@ button{
         overflow-x: hidden;
     }    
 
-    /*.details .quesInfo .quesAtt span{
-        font-size: 1rem;
-        overflow-x: hidden;
-    }*/
 
     .warningContainer{
         font-size: 1rem;
+        overflow: scroll;
+        height: 30%;
     }
     
     .warningContainer .closeBtn{
