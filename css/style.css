@@ -88,11 +88,11 @@ button{
     width: 20%;
     padding: 5px;
     flex-direction: column;
-    gap: 5px;
+    justify-content: space-around;
 }
 
 .details .quesNo{
-    height: 75%;
+    height: 70%;
     width: 100%;
     border-radius: 5px;
     display: grid;
@@ -141,8 +141,8 @@ button{
 
 .warningContainer {
     position: fixed;
-    height: 30%;
-    width: 30%;
+    height: 20%;
+    width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -159,17 +159,18 @@ button{
     text-align: center;
     font-size: 1.2rem;
     display: none;
+    overflow: auto;
 }
 
 .warningContainer p{
     color: #a0dae5;
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 
 .closeBtn{
-    width: 30%;
-    height: 40%;
+    width: 35%;
+    height: 55%;
     background-color: #ff9900;
     color: white;
     border: none;
@@ -214,14 +215,17 @@ button{
 
     .container .Ques .quesChange img{
         display: block;
+        height: 40px;
+        width: 40px;
     }
+    
 
     .details .quesNo button{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 3.5rem;
+        width: 3rem;
         border-radius: 5px;
         border: 2px solid black;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .details .quesInfo .quesAtt span{
@@ -229,18 +233,23 @@ button{
         overflow-x: hidden;
     }    
 
+    /*.details .quesInfo .quesAtt span{
+        font-size: 1rem;
+        overflow-x: hidden;
+    }*/
 
     .warningContainer{
         font-size: 1rem;
         overflow: scroll;
         height: 15%;
-        width: 80%;
+        width: 60%;
     }
     
     .warningContainer .closeBtn{
-        height: 30%;
-        width: 50%;
+        height: 45%;
+        width: 40%;
     }
 }
 
-
+@media screen and (max-width: 320px){
+}

@@ -24,6 +24,7 @@ if (currQues==QuesNo[0]) {
     prev.style.display="none"
 }
 
+
 const form = document.querySelector(".Ques");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -59,14 +60,15 @@ prev.addEventListener("click",()=>{
 })
 
 ham.addEventListener("click",()=>{
-    if (details.style.display=="block") {
+    if (details.style.display=="flex") {
         details.style.display="none";
         ham.src="images/hambirger.png"
     } else {
-        details.style.display="block";
+        details.style.display="flex";
         details.style.position="absolute";
         details.style.right="1px"
         details.style.height="90%"
+        details.style.width="43%"
         ham.src="images/close.png"
     }
     
@@ -91,6 +93,7 @@ function visiChange() {
         }
     }
 }
+
 document.addEventListener("visibilitychange", visiChange);
 
 Submit.addEventListener("click",()=>{
