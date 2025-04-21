@@ -47,6 +47,17 @@ button{
     height: 100%;
 }
 
+.qa-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 .question .Ques :first-child{
     overflow: auto;
 }

@@ -12,34 +12,26 @@
     <h1>BEST OF LUCK</h1>
     <div class="container flex">
         <div class="question bblack">
-            <form class="Ques" action="form.php">
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consequuntur sapiente fugit ad officia sint optio repudiandae dolores, vero cum voluptatum totam quam, ullam fugiat explicabo quibusdam facere esse, enim saepe necessitatibus atque. Magnam officia quibusdam nisi animi ad repudiandae fuga ratione esse, ullam molestiae sint nesciunt, nam excepturi numquam, facere quasi saepe. Id architecto cum ducimus reiciendis sunt incidunt quasi dolore, quia ab, quidem perferendis laboriosam, maiores omnis libero. Cupiditate voluptatum minus asperiores et laudantium iusto, dignissimos optio magni perspiciatis fugit enim temporibus sed rem est vero esse reprehenderit placeat excepturi incidunt repellendus voluptas! Est sequi nulla sed mollitia?
+            <form class="Ques" action="">
+                <div class="qa-wrapper">
+                  <div class="question-text"></div>
+                  <div class="options"></div>
                 </div>
+              
                 <div class="quesChange flex bblue">
-                    <img src="../images/hambirger.png" alt="" id="ham">
-                    <div class="buttons">
-                        <button id="prev">Prev</button>
-                        <button id="next">Next</button>
-                        <button type="submit" id="Submit">Submit</button>
-                    </div>
+                  <img src="../images/hambirger.png" alt="" id="ham">
+                  <div class="buttons">
+                    <button id="prev" style="display: none;">Prev</button>
+                    <button id="next" style="display: block;">Next</button>
+                    <button type="submit" id="Submit" style="display: none;">Submit</button>
+                  </div>
                 </div>
-            </form>
+              </form>
+              
         </div>
         <div class="details flex bblack">
             <div class="quesNo bblue">
-                <button class="QuesNo">1</button>
-                <button class="QuesNo">2</button>
-                <button class="QuesNo">3</button>
-                <button class="QuesNo">4</button>
-                <button class="QuesNo">5</button>
-                <button class="QuesNo">6</button>
-                <button class="QuesNo">7</button>
-                <button class="QuesNo">8</button>
-                <button class="QuesNo">9</button>
-                <button class="QuesNo">10</button>
-                <button class="QuesNo">11</button>
-                <button class="QuesNo">12</button>
+                <!-- Question numbers will be dynamically inserted here -->
             </div>
             <div class="quesInfo flex bblue">
                 <div class="quesAtt flex">
@@ -58,11 +50,12 @@
         </div>
         <div class="warningContainer bblack">
             <div class="warningBox">
-                <p id="message">You can't leave window during test. After one more try you'll be disqaulified</p>
-                    <button class="closeBtn">Close</button>
+                <p id="message">You can't leave window during test. After one more try you'll be disqualified</p>
+                <button class="closeBtn">Close</button>
             </div>
         </div>
     </div>
     <script src="../js/script.js"></script>
+    <script src="../backend/app.js"></script>
 </body>
 </html>
