@@ -2,7 +2,8 @@ import express from 'express';
 import { connect, Schema, model } from 'mongoose';
 import cors from 'cors';  // Importing cors for your backend
 
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 const app = express();
 const PORT = 3000; // Or any port you want
 
