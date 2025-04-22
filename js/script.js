@@ -8,9 +8,6 @@ let questionContainer = document.querySelector(".question");
 let closeBtn = document.querySelector(".closeBtn");
 let warningContainer = document.querySelector(".warningContainer");
 let message = document.querySelector("#message");
-import config from './config.js';
-const API_BASE_URL = config.API_BASE_URL;
-
 let leaveCount = 0;
 
 let i = 0;
@@ -19,7 +16,7 @@ let questionButtons = [];
 let userAnswers = {};
 
 // Fetch questions from the API
-fetch(`${API_BASE_URL}`)
+fetch('http://localhost:3000/api/questions')
   .then(res => res.json())
   .then(data => {
     questions = data;  // Store fetched questions
@@ -141,14 +138,14 @@ prev.addEventListener("click", () => {
 ham.addEventListener("click", () => {
   if (details.style.display == "flex") {
     details.style.display = "none";
-    ham.src = "images/hambirger.png";
+    ham.src = "../images/hambirger.png";
   } else {
     details.style.display = "flex";
     details.style.position = "absolute";
     details.style.right = "1px";
     details.style.height = "90%";
     details.style.width = "43%";
-    ham.src = "images/close.png";
+    ham.src = "../images/close.png";
   }
 });
 
