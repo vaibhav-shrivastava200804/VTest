@@ -8,6 +8,9 @@ let questionContainer = document.querySelector(".question");
 let closeBtn = document.querySelector(".closeBtn");
 let warningContainer = document.querySelector(".warningContainer");
 let message = document.querySelector("#message");
+import config from './config.js';
+const API_BASE_URL = config.API_BASE_URL;
+
 let leaveCount = 0;
 
 let i = 0;
@@ -16,7 +19,7 @@ let questionButtons = [];
 let userAnswers = {};
 
 // Fetch questions from the API
-fetch('http://localhost:3000/api/questions')
+fetch(`${API_BASE_URL}`)
   .then(res => res.json())
   .then(data => {
     questions = data;  // Store fetched questions

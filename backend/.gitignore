@@ -1,0 +1,15 @@
+# Ignore node_modules (huge folder, recreated on install)
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+
+# Ignore IDE-specific files
+.vscode/
+.idea/

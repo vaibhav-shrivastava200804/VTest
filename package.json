@@ -21,6 +21,10 @@
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
+<<<<<<< HEAD
+    "dotenv": "^16.5.0",
+=======
+>>>>>>> 8e084b922454e7de554c7713c8f9499f327f4ee9
     "express": "^5.1.0",
     "mongoose": "^8.13.2"
   }

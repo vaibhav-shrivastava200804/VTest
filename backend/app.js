@@ -1,7 +1,8 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors'); // So your frontend can fetch from this server
+import express from 'express';
+import { connect, Schema, model } from 'mongoose';
+import cors from 'cors';  // Importing cors for your backend
 
+require('dotenv').config();
 const app = express();
 const PORT = 3000; // Or any port you want
 
@@ -10,9 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/Question_Details')
+
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
-    console.log('MongoDB connected');
+    console.log('MongoDB Atlas connected');
   })
   .catch((err) => {
     console.log('MongoDB Error:', err);
