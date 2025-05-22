@@ -22,11 +22,12 @@ let userAnswers = {};
 fetch(`${API_BASE_URL}`)
   .then(res => res.json())
   .then(data => {
-    questions = data;  // Store fetched questions
-    generateQuestionButtons();  // Generate question number buttons dynamically
-    displayQuestion(i);  // Display the first question
+    // Sort questions by questionNumber
+    questions = data.sort((a, b) => a.questionNumber - b.questionNumber);
+    generateQuestionButtons();
+    displayQuestion(i);
   })
-  .catch(err => console.error('Error fetching:', err));
+
 
 // Function to display the current question
 function displayQuestion(index) {
